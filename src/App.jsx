@@ -1,35 +1,85 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import styles from "./App.module.css";
+import {
+  LogoDefault,
+  /*   ArrowDown,
+   */ GitHubIcon,
+  DribbleIcon,
+  FigmaIcon,
+  PhotoHero,
+} from "./assets/image";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+    <div className={styles.portfolioContainer}>
+      <header className={styles.header}>
+        <div className={styles.headerTitle}>
+          <img src={LogoDefault} alt="Imagem do portfolio logo" />
+          <h1>André</h1>
+        </div>
+        <nav className={styles.nav}>
+          <a href="">
+            <p>
+              <span>#</span> home
+            </p>
+          </a>
+          <a href="">
+            <p>
+              <span>#</span> works
+            </p>
+          </a>
+          <a href="">
+            <p>
+              <span>#</span> about-me
+            </p>
+          </a>
+          <a href="">
+            <p>
+              <span>#</span> contacts
+            </p>
+          </a>
+          <select className={styles.select}>
+            <option value="">EN</option>
+            <option value="">PT</option>
+          </select>
+        </nav>
+      </header>
+      <aside className={styles.asideMedia}>
+        <div className={styles.line}></div>
+        <a href="">
+          <img src={GitHubIcon} alt="icone GitHub" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="">
+          <img src={DribbleIcon} alt="icone Dribble" />
         </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        <a href="">
+          <img src={FigmaIcon} alt="icone Figma" />
+        </a>
+      </aside>
+      <main className={styles.mainContainer}>
+        <section className={styles.hero}>
+          <div className={styles.heroDescription}>
+            <h1 className={styles.descriptionText}>
+              André is a <span>web designer </span>and
+              <span> front-end developer</span>
+            </h1>
+            <p>
+              He crafts responsive websites where technologies meet creativity
+            </p>
+            <button className={styles.buttonHero}>Contact me !!</button>
+          </div>
+
+          <div className={styles.heroImage}>
+            <img src={PhotoHero} alt="Imagem de homem no hero" />
+            <div className={styles.subTextheroImage}>
+              <div className={styles.squadHeroImage}></div>
+              <p>
+                Currently working on <span>Portfolio</span>{" "}
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;

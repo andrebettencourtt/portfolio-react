@@ -1,0 +1,196 @@
+:root {
+  --purple-color: #c778dd;
+  --gray-color: #abb2bf;
+  --background-color: #282c33;
+  --white-color: #ffffff;
+}
+
+.portfolioContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--background-color);
+}
+
+.header {
+  width: 1024px;
+  height: 61px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 8px;
+}
+
+.headerTitle {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  gap: 8px;
+}
+
+.headerTitle img {
+  width: 16px;
+  height: 16px;
+}
+
+.headerTitle h1 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white-color);
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.nav p {
+  color: var(--gray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav button {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-color);
+  border: none;
+  width: 34px;
+  height: 21px;
+  gap: 4px;
+}
+
+.nav span {
+  color: var(--purple-color);
+}
+
+.select {
+  background-color: transparent;
+  color: var(--gray-color);
+  border: none;
+}
+
+.asideMedia {
+  position: absolute;
+  top: 0;
+  left: 17px;
+
+  width: 32px;
+  height: 311px;
+
+  gap: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 1px;
+  height: 191px;
+
+  background-color: var(--gray-color);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 6rem;
+}
+
+.hero {
+  background-color: var(--background-color);
+  height: 423px;
+  width: 1024px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroDescription {
+  width: 537px;
+  height: 227px;
+
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 32px;
+}
+
+.descriptionText {
+  font-size: 2rem;
+  color: var(--white-color);
+}
+
+.descriptionText span {
+  color: var(--purple-color);
+}
+
+.heroDescription p {
+  color: var(--gray-color);
+  font-size: 16px;
+}
+
+.buttonHero {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid var(--purple-color);
+  color: var(--white-color);
+  font-size: 16px;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.heroImage {
+  width: 469px;
+  height: 386px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subTextheroImage {
+  width: 402px;
+  height: 37px;
+  padding: 8px;
+
+  color: var(--gray-color);
+
+  border: 1px solid var(--white-color);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.squadHeroImage {
+  width: 16px;
+  height: 16px;
+  background-color: #c778dd;
+}
+
+.subTextheroImage span {
+  color: var(--white-color);
+  font-weight: bold;
+}
